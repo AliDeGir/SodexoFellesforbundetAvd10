@@ -1,0 +1,190 @@
+<!-- ADD ENTER FUNCTION TO PASSWORD INPUT -->
+<!-- LOGIN MENU CANCEL BUTTON HIDES SIDEBAR - FIX IT -->
+<!-- ADD CONTACT CARD FLIP FUNCTION -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="Closeup.JPG" sizes="32x32">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sodexo Fellesforbundet Avd 10</title>
+</head>
+<body>
+    <header>
+        <img src="Logo.JPG" alt="Sodexo Fellesforbundet Logo">
+        <h1 class="logo-text">Sodexo<br>Fellesforbundet</h1>
+        
+    </header>
+    <!-- VIP BUTTON -->
+    <button id="vip-btn" class="vip-btn" onclick="openForm()">VIP</button>
+    <!-- LANGUAGE TRANSLATOR BUTTON -->
+    <div id="google_translate_element" class="lang-menu"></div>
+    <!-- BURGER MENU ANIMATION AND NAVBAR POPUP -->
+    <div class="menu-wrap">
+        <!-- CHECKBOX -->
+        <input type="checkbox" class="toggler" id="TOGGLER">
+        <!-- LABEL FOR CHECKBOX -->
+        <label for="TOGGLER" class="hamburger"><div></div></label>
+        <!-- NAVBAR POPUP -->
+        <div class="navbar-popup" id="NAVBAR-POPUP">
+            <!-- NAVBAR MENU BUTTONS -->
+            <ul>
+                <li><a href="#INFO"><i class="fa fa-link"></i>Top</a></li>
+                <li><a href="#NEWS"><i class="fas fa-desktop"></i>News</a></li>
+                <li><a href="#BENEFITS"><i class="fa fa-eye"></i>Benefits</a></li>
+                <li><a href="#AGREEMENTS"><i class="fa fa-book"></i>Agreements</a></li>
+                <li><a href="#VIP"><i class="fas fa-user-shield"></i>VIP</a></li>
+                <li><a href="#CONTACT"><i class="fa fa-question-circle"></i>Contact</a></li>
+            </ul>
+            <!-- SOCIAL MEDIA ICONS -->
+            <li>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </li>
+        </div>
+    </div>
+    <!-- LOGIN FORM POPUP -->
+    <div class="form-popup" id="FORMPOPUP">
+        <form class="form-container">
+            <h3>Login for members</h3>
+            <input type="password" id="password" placeholder="Password and press Login" onkeydown="if (event.keyCode == 13) document.getElementById('button').click()" />
+            <input type="button" value="Login" id="button" onclick="checkPassword()">
+            <button id="cancel-btn">Cancel</button>
+        </form>
+    </div>
+    <!-- BODY - SECTIONS -->
+    <div class="sections">
+        <div class="info" id="INFO">
+            <h1>We must be many!</h1><br>
+            <ul>
+                <li>It is the number of members that determines the influence of the trade union movement.</li>
+                <li>It is we who organized who created the welfare state - and it is we who must defend it.</li>
+                <li>Fellesforbundet gives those organized in a workplace the tools to fight for better pay and working conditions.</li>
+                <li>Over a hundred years of history have shown us that it is only when we stand together that we can manage to get our fair share of the values that are created in the company and society.</li>
+            </ul>
+            <p> 
+                As a trade unionist in Fellesforbundet, you have many advantages, both in terms of salary, working hours and other social conditions. 
+                In addition, you get good insurance and other good membership benefits e.g. on rental car, holidays / experiences, mobile telephony / broadband through LOfavør.
+            </p>
+        </div>
+        <div class="news" id="NEWS">
+            <h3>News:</h3><br>
+            <p>We are currently under local sallary negotiations. This means we might get raise and some additional perks at work. Stay tuned for updates.</p>
+            <p>We need more members to have better position in negotiations.</p>
+        </div>
+        <div class="benefits" id="BENEFITS">
+            <h3>As organized in a company with a collective agreement, you get:</h3><br>
+        <ul>
+            <li>Guaranteed, contractual salary (according to the collective agreement). Right to annual local negotiations</li>
+            <li>37,5 working hours or less a week. Assistance in the event of involuntary part-time work or breach of the law or contractual provisions on working hours</li>
+            <li>Statutory parental, care and educational leave. As a partner, you are entitled to 14 days of paid leave in connection with the birth/adoption of a child</li>
+            <li>At least 50% and often 100% overtime allowance</li>
+            <li>Various allowances such as evening, night and weekend allowances</li>
+            <li>National Insurance provisions and AFP allowance (contractual pension)</li>
+            <li>5 weeks holiday and 12% holiday allowance</li>
+            <li>Right to legal assistance/assessment in the event of termination</li>
+            <li>Right to legal assistance/assessment in the event of occupational injury</li>
+        </ul><br>
+        <h3>Insurance options offered by Fellesforbundet:</h3><br>
+        <ul>
+            <li>LOfavør Home Contents Insurance: A full-value insurance of contents and movables that also includes liability insurance, legal aid insurance and insurance of your contents and movables. The insurance does not cover student members.</li>
+            <li>LOfavør Basic Insurance: This insurance policy provides financial ‘first aid’ in the form of a one-off payment when a member, spouse/cohabitant or child dies. The insurance does not cover student members.</li>
+            <li>LOfavør Accident Insurance: This insurance policy provides financial support in the event of death, disability and treatment expenses resulting from an accident that has occurred outside working hours. All members below the age of 70 are eligible for this insurance – with the exception of student members.</li>
+        </ul><br>
+        <h3>Self-payment insurance:</h3><br>
+        <ul>
+            <li>LOfavør Legal Aid Insurance: All professionally active members of Fellesforbundet are eligible for this scheme from 1 May 2020. The insurance costs NOK 71/ month. The insurance policy applies to key areas of law in private life, such as family and inheritance, purchase of goods, rent, neighbour disputes, insurance claims and revocation of driver’s licence.</li>
+            <li>LOfavør Travel Insurance: All members of Fellesforbundet are eligible for this insurance at NOK 95 a month. The insurance policy covers the whole family, 24 hours a day, globally. No excess or cancellation insurance is included.</li>
+        </ul><br>
+        <h3>Support for further/continuing education/training:</h3><br>
+        <p>If you are a member of the Fellesforbundet (and not a student) and have been a member for the past three years, you will be able to apply for support from the Confederation of Trade Unions’ (LO) educational fund! The fund provides support for full-year educational/training courses as well as for shorter courses.</p>
+        </div>
+        <div class="agreements" id="AGREEMENTS">
+            <h3>Collective agreements:</h3><br>
+            <p><a href="https://www.fellesforbundet.no/globalassets/in-english/collective-agreement-settlements/cas-2020/collective-agreement-for-the-building-industry-fob-20202022.pdf">English version PDF</a></p>
+            <p><a href="https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/tariffavtaler/overenskomster-2020-2022/riksavtalen-2020-2022.pdf">Norwegian version PDF</a></p>
+            <p><a href="https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/hovedoppgjoret-2022---riksavtalen.pdf">Minimum wages PDF</a></p>
+        </div>
+        <div class="contact" id="CONTACT">
+            <div class="card-1">
+                <img src="Ali.JPG" alt="">
+                <div class="contact-text1">
+                    <h3>Ali Degirmenci</h3>
+                    <p>
+                        Hovedtillitsvalgt<br><br>
+                        <a href="tel:90401253">Call me: +47 90401253</a><br><br>
+                        <a href="mailto:tillitsvalgte.no@sodexo.com">Mail me: tillitsvalgte.no@sodexo.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card-2">
+                <img src="Marina.JPG" alt="">
+                <div class="contact-text2">
+                    <h3>Marina Fedjajeva</h3>
+                <p>
+                    Ass. Hovedtillitsvalgt<br><br>
+                    <a href="tel:+4741321690">Call me: +47 41321690</a><br><br>
+                    <a href="mailto:tillitsvalgte.no@sodexo.com">Mail me: tillitsvalgte.no@sodexo.com</a>
+                </p>
+                </div>
+            </div>
+        </div>
+        <!-- VIP -->
+        <div class="vip" id="VIP">
+            <h1>VIP Section:</h1><br>
+            <p>Login to VIP to see the content of this section. Don`t press enter, click the Login button.</p><br>
+            <div class="hidden" id="HIDDENDIV">
+                <p>Work in progress...</p>
+                <p>Adding password system to be able to view this section ONLY for members.</p>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        Copyright: Ali Degirmenci ©
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        
+        // function checkPassword() {
+        //     if (document.getElementById('password').value == 123){
+        //         document.getElementById('HIDDENDIV').classList.remove('hidden');
+        //         document.getElementById('FORMPOPUP').style.display='none';
+        //     } else { alert('Invalid Password!'); password.setSelectionRange(0, password.value.length); }
+        // }
+        // function openForm() {
+        //     document.getElementById("FORMPOPUP").style.display = "block";
+        // }
+        
+        // function closeForm() {
+        //     document.getElementById("FORMPOPUP").style.display = "none";
+        // }
+
+        // -- FUNCTION FOR BURGER BUTTON TO TOGGLE ON/OFF --
+        // window.onload = () => {
+        //     // Get the button, and when the user clicks on it, execute myFunction
+        //     document.getElementById("vip-btn").onclick = function() {myFunction()};
+
+        //     /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+        //     function myFunction() {
+        //     document.getElementById("FORMPOPUP").classList.toggle("show");
+        //     }
+        // }
+
+        
+    </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'ar,en,es,jv,ko,pa,pt,ru,zh-CN,no,it,ku,ps,fa,ro,sr,sw,ta,tr,ur,vi,lt,lv,id,el,fr,fi,et,hr,bs,bg,sq,nl,th,ug', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
